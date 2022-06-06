@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* TITULO: 'Bebas Neue', cursive;
+   PARAGRAFO: 'Spline Sans Mono', monospace; */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/bandeira.png);
+    font-family: Poppins;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    padding: 20px;
+    background-color: #555;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+header nav a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #555;
+
+}
+
+header nav a:active {
+    background-color: rgb(161, 156, 156);
+}
+
+.banner {
+    background-image: url(../img/sao_paulo.jpg);
+    background-repeat: no-repeat;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.banner .container {
+    width: 100%;
+    padding: 50px;
+}
+
+.banner .container h1 {
+    background-color: rgba(255, 255, 255, 0.705);
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.banner .container p {
+    background-color: rgba(255, 255, 255, 0.705);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.curiosidades h2 {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    letter-spacing: 5px;
+
+}
+
+.curiosidades.container {
+    padding: 20px;
+}
+
+.curiosidades .cards {
+    display: flex;
+    gap: 20px;
+
+}
+
+.curiosidades .cards>div {
+    flex: 1;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.curiosidades .cards>div:hover {
+    transform: scale(1.1);
+}
+
+
+.sombra {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8085609243697479) 23%, rgba(0, 0, 0, 0) 97%);
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.curiosidades h4 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+.curiosidades p {
+    margin: 0px;
+}
+
+.habitantes {
+    background-image: url(../img/compras.jpg);
+}
+
+.cidades {
+    background-image: url(../img/cidade.jpg);
+
+}
+
+.imigrantes {
+    background-image: url(../img/alemaes.jpg);
+}
+
+.video {
+    padding: 20px 15px;
+}
+
+.video h2 {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.video iframe {
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background-color: #555;
+
+}
+
+footer h2 {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+
+
+}
+
+.links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+
+}
+
+.links span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+
+.links span:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: #555;
+
+
+}
+
+.links span:active {
+    background-color: rgb(161, 156, 156);
+}
+
+.links img {
+    height: 50px;
+
+}
+
+@media (max-width: 425px){
+    header .container {
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    header nav {
+     flex-direction: column;
+     align-items: center;   
+    }
+
+    .curiosidades .cards{
+    flex-direction: column;
+    }
+
+    .curiosidades .cards>div{
+        flex: auto;
+    }
+
+    .video iframe {
+        width: 100%;;
+    }
+
+    .links{
+    flex-direction: column;
+    gap: 16px;
+    }
+}
